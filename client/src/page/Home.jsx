@@ -14,36 +14,35 @@ const Home = () => {
             <div className="row align-items-center">
               <div className="col-12 col-md-4 mb-3 mb-md-0 d-flex justify-content-center">
                 <Image
-                  src="/src/assets/img/boy.png"
+                  src="img/profile.jpg"
                   alt="boy"
                   roundedCircle
                   fluid
                   width={180}
+                  height={180}
                   style={{ border: '4px solid #7F00FF', boxShadow: '0 0 16px #7F00FF55' }}
                 />
               </div>
               <div className="col-12 col-md-8 text-md-start text-center">
                 <h1 className="mb-2" style={{ fontWeight: 'bold', color: '#fff' }}>
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="32" className="me-2" />
-                  Watcharawit Sorn
+                  <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" width="32" className="me-2" />
+                  Watcharawit Sae-jung
+                  <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" width="32" className="ms-2" />
                 </h1>
                 <h3 className="mb-2" style={{ color: '#7F00FF', fontWeight: 'bold' }}>Full Stack Developer</h3>
                 <p className="mb-3" style={{ color: '#ccc' }}>
-                  Passionate about building responsive and user-friendly web applications.<br />
-                  Experienced in React, Node.js, Python, and modern web technologies.
-                </p>
+                 ผมมีประสบการณ์พัฒนาเว็บแอปด้วย React/React-Bootstrap, ออกแบบ UI, เชื่อมต่อ Node.js/Express และฐานข้อมูล MongoDB ซึ่งเชื่อว่าจะเป็นประโยชน์ต่อองค์กร พร้อมทั้งมีความตั้งใจที่จะเรียนรู้และพัฒนาทักษะเพิ่มเติมเพื่อเติบโตไปพร้อมกับบริษัท <br />
+                </p> 
                 <div className="d-flex flex-wrap gap-3 justify-content-md-start justify-content-center mb-3">
-                  <a href="mailto:yourmail@email.com" className="btn btn-outline-light btn-sm rounded-pill">Contact</a>
-                  <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm rounded-pill">
+                  <a href="watcharawit.saejung@gmail.com" target="_blank" className="btn btn-outline-light btn-sm rounded-pill">Contact</a>
+                  <a href="https://github.com/Watcharawit7" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm rounded-pill">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="20" className="me-1" /> GitHub
-                  </a>
-                  <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="btn btn-outline-info btn-sm rounded-pill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="linkedin" width="20" className="me-1" /> LinkedIn
                   </a>
                 </div>
               </div>
             </div>
           </div>
+          
           {/* About Section */}
           <div className="about-card p-4 mt-4 shadow rounded-4" style={{ background: 'rgba(40,40,40,0.85)', maxWidth: 900, width: '100%' }}>
             <h2 className="mb-3" style={{ color: '#7F00FF', fontWeight: 'bold' }}>About Me</h2>
@@ -78,6 +77,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        
         <div className="d-flex flex-column justify-content-center align-items-center text-center mt-5">
           <div className="d-flex justify-content-between align-items-center w-100 mb-2" style={{ maxWidth: '900px' }}>
             <div className="d-flex align-items-center">
