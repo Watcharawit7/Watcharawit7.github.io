@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Navbar-Dxo_ZdFp.js","assets/index-z6ydfra4.js","assets/index-BqmVlyiR.css","assets/Container-BrOD_IS7.js"])))=>i.map(i=>d[i]);
+import{j as r,r as t,_ as s}from"./index-z6ydfra4.js";const e=t.lazy(()=>s(()=>import("./Navbar-Dxo_ZdFp.js"),__vite__mapDeps([0,1,2,3]))),a=()=>r.jsxs(r.Fragment,{children:[r.jsx(e,{}),r.jsx("div",{children:r.jsx("h1",{children:"My Projects"})})]});export{a as default};
