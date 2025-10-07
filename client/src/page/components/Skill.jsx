@@ -1,13 +1,11 @@
 import React, { lazy } from "react";
 
-const Navbar = lazy(() => import("../Navbar"));
 
 const Skill = () => {
 
 
     return (
-
-        <Navbar />
+        <div>Skill</div>
     )
 }
 

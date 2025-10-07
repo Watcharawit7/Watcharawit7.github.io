@@ -3,6 +3,9 @@ import { Routes, Route } from "react-router-dom";
 
 const Home = lazy(() => import("../page/Home"));
 const Project = lazy(() => import("../page/components/Project"));
+const Skill = lazy(() => import("../page/components/Skill"));
+const Contact = lazy(() => import("../page/components/Contact"));
+const NotFound = lazy(() => import("../page/NotFound"));
 import Loading from "./Loading";
 
 const Layout = () => {
@@ -15,6 +18,9 @@ const Layout = () => {
               {/* <Route exact path="/" element={<Home />} /> */}
               <Route path="/" element={<Home />} />
               <Route path="/project" element={<Project />} />
+              <Route path="/skill" element={<Skill />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </div>
