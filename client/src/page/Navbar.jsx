@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
   return (
-  <Navbar expand="lg" variant="dark" className="fixed-top bg-dark mb-4">
+    <Navbar expand="lg" variant="dark" className="fixed-top bg-dark mb-4">
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold text-light">
           MyPortfolio
@@ -13,6 +13,9 @@ const CustomNavbar = () => {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="text-light mx-2">
               Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/work" className="text-light mx-2">
+              Work Experience
             </Nav.Link>
             <Nav.Link as={Link} to="/project" className="text-light mx-2">
               Projects
@@ -27,9 +30,7 @@ const CustomNavbar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-
   );
-}
+};
 
 export default CustomNavbar;

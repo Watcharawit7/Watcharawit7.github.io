@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      className="text-center py-4 mt-5"
-      style={{ background: "#111", color: "#fff", borderTop: "1px solid #222" }}
+      className="text-center py-4 mt-5 bg-dark"
+      style={{ color: "#fff", borderTop: "1px solid #222" }}
     >
       <div className="container">
         <div className="mb-2">
           <span style={{ fontWeight: "bold", fontSize: "1.1rem" }}>
-            &copy; {new Date().getFullYear()} Watcharawit Sorn. All rights
+            &copy; {new Date().getFullYear()} Watcharawit Saejung. All rights
             reserved.
           </span>
         </div>

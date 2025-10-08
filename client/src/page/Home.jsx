@@ -1,10 +1,12 @@
 import { Container, Image, Card, Button } from "react-bootstrap";
+import { BsDownload } from "react-icons/bs";
 
 const Home = () => {
   return (
     <>
       <Container className="mt-75">
         <div className="d-flex flex-column justify-content-center align-items-center text-center">
+          {/* Profile Section */}
           <div className="profile-card p-4 shadow-lg rounded-4" style={{ background: 'rgba(30,30,30,0.8)', maxWidth: 900, width: '100%' }}>
             <div className="row align-items-center">
               <div className="col-12 col-md-4 mb-3 mb-md-0 d-flex justify-content-center">
@@ -19,35 +21,49 @@ const Home = () => {
                 />
               </div>
               <div className="col-12 col-md-8 text-md-start text-center">
-                <h1 className="mb-2" style={{ fontWeight: 'bold', color: '#fff' }}>
+                <h2 className="mb-2" style={{ fontWeight: 'bold', color: '#fff' }}>
                   <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" width="32" className="me-2" />
                   Watcharawit Sae-jung
                   <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" width="32" className="ms-2" />
-                </h1>
+                </h2>
                 <h3 className="mb-2" style={{ color: '#7F00FF', fontWeight: 'bold' }}>Full Stack Developer</h3>
                 <p className="mb-3" style={{ color: '#ccc' }}>
-                 ผมมีประสบการณ์พัฒนาเว็บแอปด้วย React/React-Bootstrap, ออกแบบ UI, เชื่อมต่อ Node.js/Express และฐานข้อมูล MongoDB ซึ่งเชื่อว่าจะเป็นประโยชน์ต่อองค์กร พร้อมทั้งมีความตั้งใจที่จะเรียนรู้และพัฒนาทักษะเพิ่มเติมเพื่อเติบโตไปพร้อมกับบริษัท <br />
-                </p> 
+                  ผมมีประสบการณ์พัฒนาเว็บแอปด้วย React/React-Bootstrap, ออกแบบ UI, เชื่อมต่อ Node.js/Express และฐานข้อมูล MongoDB ซึ่งเชื่อว่าจะเป็นประโยชน์ต่อองค์กร พร้อมทั้งมีความตั้งใจที่จะเรียนรู้และพัฒนาทักษะเพิ่มเติมเพื่อเติบโตไปพร้อมกับบริษัท <br />
+                </p>
+                <div className="mb-3">
+                  <div className="mb-2" style={{ color: '#7F00FF', fontWeight: 'bold', fontSize: '1.1rem' }}>จุดเด่น</div>
+                  <ul className="list-inline mb-2">
+                    <li className="list-inline-item badge bg-primary bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">เรียนรู้ไว</li>
+                    <li className="list-inline-item badge bg-primary bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">แก้ปัญหาเฉพาะหน้าได้ดี</li>
+                    <li className="list-inline-item badge bg-primary bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">รับผิดชอบสูง</li>
+                  </ul>
+                  <div className="mb-2" style={{ color: '#7F00FF', fontWeight: 'bold', fontSize: '1.1rem' }}>Soft Skills</div>
+                  <ul className="list-inline mb-2">
+                    <li className="list-inline-item badge bg-success bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">Teamwork</li>
+                    <li className="list-inline-item badge bg-success bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">Communication</li>
+                    <li className="list-inline-item badge bg-success bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">Problem Solving</li>
+                    <li className="list-inline-item badge bg-success bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">Adaptability</li>
+                  </ul>
+                  <div className="mb-2" style={{ color: '#7F00FF', fontWeight: 'bold', fontSize: '1.1rem' }}>Passion</div>
+                  <ul className="list-inline mb-0">
+                    <li className="list-inline-item badge bg-warning bg-opacity-75 text-dark fs-6 fw-normal p-2 m-1">รักการสร้างสรรค์เทคโนโลยีใหม่</li>
+                    <li className="list-inline-item badge bg-warning bg-opacity-75 text-dark fs-6 fw-normal p-2 m-1">ชอบพัฒนา UI/UX ให้ใช้งานง่าย</li>
+                    <li className="list-inline-item badge bg-warning bg-opacity-75 text-dark fs-6 fw-normal p-2 m-1">สนุกกับการเรียนรู้สิ่งใหม่</li>
+                  </ul>
+                </div>
                 <div className="d-flex flex-wrap gap-3 justify-content-md-start justify-content-center mb-3">
                   <a href="https://github.com/Watcharawit7" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm rounded-pill">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="20" className="me-1" /> GitHub
+                  </a>
+                  <a href="/pdf/Watcharawit_Resume.pdf" download className="btn btn-success btn-sm rounded-pill ms-2 d-flex align-items-center">
+                    <BsDownload className="me-1" size={18} />
+                    Download Resume
                   </a>
                 </div>
               </div>
             </div>
           </div>
           
-          {/* About Section */}
-          {/* <div className="about-card p-4 mt-4 shadow rounded-4" style={{ background: 'rgba(40,40,40,0.85)', maxWidth: 900, width: '100%' }}>
-            <h2 className="mb-3" style={{ color: '#7F00FF', fontWeight: 'bold' }}>About Me</h2>
-            <p style={{ color: '#eee', fontSize: '1.1rem' }}>
-              สวัสดีครับ ผม Watcharawit Sorn เป็นนักพัฒนา Full Stack ที่มีความหลงใหลในการสร้างเว็บไซต์ที่สวยงามและใช้งานง่าย<br />
-              มีประสบการณ์ทั้ง Frontend และ Backend รวมถึงการออกแบบ UI/UX และการทำงานร่วมกับทีม<br />
-              สนใจเทคโนโลยีใหม่ ๆ และการเรียนรู้สิ่งใหม่เพื่อพัฒนาตัวเองอยู่เสมอ<br />
-              <br />
-              <span style={{ color: '#7F00FF', fontWeight: 'bold' }}>จุดเด่น:</span> การแก้ปัญหา, การสื่อสาร, การทำงานเป็นทีม, ความรับผิดชอบ
-            </p>
-          </div> */}
           {/* Contact Section */}
           {/* <div className="contact-card p-4 mt-4 shadow rounded-4" style={{ background: 'rgba(30,30,30,0.85)', maxWidth: 900, width: '100%' }}>
             <h2 className="mb-3" style={{ color: '#7F00FF', fontWeight: 'bold' }}>Contact</h2>
