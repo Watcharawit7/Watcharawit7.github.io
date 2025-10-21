@@ -1,1 +1,0 @@
-import{a as s,j as r,c as o}from"./index-CKDkJXVA.js";const x=(e=>s.forwardRef((a,t)=>r.jsx("div",{...a,ref:t,className:o(a.className,e)}))),c=s.createContext(null);c.displayName="CardHeaderContext";export{c,x as d};
