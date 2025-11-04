@@ -42,16 +42,15 @@ const Skill = () => {
     return (
         <Container className="mt-75 mb-5">
             <div className="d-flex flex-column justify-content-center align-items-center text-center">
-                <h1 style={{ fontWeight: 'bold', letterSpacing: '2px', color: '#7F00FF', marginBottom: 10 }}>
+                <h1 className="text-primary" style={{ fontWeight: 'bold', letterSpacing: '2px', marginBottom: 10 }}>
                     Skill Programming
                 </h1>
                 <p style={{ color: '#bbb', fontSize: '1.1rem', maxWidth: 700, marginBottom: 40 }}>
-                    รวมทักษะการเขียนโปรแกรมและเทคโนโลยีที่ถนัด <span style={{ color: '#7F00FF', fontWeight: 'bold' }}>พร้อมเรียนรู้สิ่งใหม่เสมอ</span><br/>
-                    <span style={{ color: '#aaa', fontSize: '1rem' }}>เน้นพัฒนาเว็บแอปที่สวยงาม ใช้งานง่าย และมีประสิทธิภาพ</span>
+                    ทักษะการเขียนโปรแกรมและเทคโนโลยีที่ถนัด <span className="text-primary" style={{ fontWeight: 'bold' }}>พร้อมเรียนรู้สิ่งใหม่เสมอ</span><br/>
                 </p>
                 {skillGroups.map((group) => (
                     <div key={group.title} className="mb-5 w-100">
-                        <h3 style={{ color: '#7F00FF', fontWeight: 'bold', marginBottom: 24, textAlign: 'left', marginLeft: 10 }}>{group.title}</h3>
+                        <h3 style={{ fontWeight: 'bold', marginBottom: 24, textAlign: 'left', marginLeft: 10 }}>{group.title}</h3>
                         <div className="row w-100 justify-content-center" style={{ maxWidth: '900px', margin: '0 auto' }}>
                             {group.items.map((skill) => (
                                 <div className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4" key={skill.name}>

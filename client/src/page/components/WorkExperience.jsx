@@ -4,7 +4,7 @@ const experiences = [
     {
         company: "Bonmek Co.,Ltd.",
         logo: "https://www.bonmek.com/wp-content/uploads/2019/07/bonmekTransparent-1.png",
-        position: "Frontend Developer (Internship)",
+        position: "Frontend Developer (Internship) -> 4 เดือน",
         period: "มิ.ย. 2024 - ต.ค. 2024",
         details: [
             "ออกแบบ UI ระบบการจัดการโรงเรียนโดยใช้ WordPress",
@@ -15,7 +15,7 @@ const experiences = [
     {
         company: "Capsule Creation Co.,Ltd.",
         logo: "https://th.cnyxcaps.com/uploads/202334661/i202305081631176506189.jpg", // capsule icon
-        position: "Full Stack Developer (full-time)",
+        position: "Full Stack Developer (full-time) -> 5 เดือน",
         period: "ม.ค. 2024 - พ.ค. 2025",
         details: [
             "เขียน API โดยใช้ PHP ที่มีการเชื่อมต่อกับฐานข้อมูลที่ใช้ MongoDB",
@@ -25,8 +25,8 @@ const experiences = [
     },
     {
         company: "Division of Student Development and Alumni Hatyai Campus Prince of Songkla University",
-        logo: "https://scontent.fhdy1-1.fna.fbcdn.net/v/t39.30808-6/508063636_1239703247941337_7124078334144205221_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFgx9OPdg9v09PPTiV4J4DVt6rYIQdDQz63qtghB0NDPkTouw9Sty_IXYHricP4htxsswFXycnjZ0bnd-VItMvo&_nc_ohc=rquMXzwT25YQ7kNvwF5kesq&_nc_oc=AdlLzvvEOldBl9I6CWUHsOLAyqRYy6mDpEgiKWsQXR9A1x3Ti0JQpJymH-Bm8d4XJuo&_nc_zt=23&_nc_ht=scontent.fhdy1-1.fna&_nc_gid=RG2pWtACirh9SyHlhWiVzg&oh=00_Afd76_uCSc3prRl9Lg3AYmntSm17ezgbj2gxz51q3PRAuA&oe=68EC50DC",
-        position: "Fullstack Developer(full-time) ",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtLW1FTQH0is26jHSZbBfQHxhZ7oWOuARJAw&s",
+        position: "Fullstack Developer (full-time /contract) -> 4 เดือน",
         period: "มิ.ย. 2025 - ก.ย. 2025",
         details: [
             "ออกเเบบเเละพัฒนาระบบสมรรถนะนักศึกษา ด้วย framework React",
@@ -41,7 +41,7 @@ const WorkExperience = () => {
     return (
         <Container className="mt-75 mb-5">
             <div className="d-flex flex-column align-items-center text-center mb-4">
-                <h1 style={{ fontWeight: 'bold', color: '#7F00FF', letterSpacing: '2px' }}>Work Experience</h1>
+                <h1  style={{ fontWeight: 'bold',letterSpacing: '2px' }}>Work Experience</h1>
                 <p style={{ color: '#bbb', fontSize: '1.1rem', maxWidth: 700 }}>
                     ประสบการณ์การทำงานที่เกี่ยวข้องกับสายอาชีพพัฒนาเว็บไซต์และซอฟต์แวร์
                 </p>
@@ -51,9 +51,9 @@ const WorkExperience = () => {
                     <div key={exp.company} className="mb-5 d-flex align-items-start position-relative">
                         {/* Timeline dot and line */}
                         <div className="me-3 d-none d-md-flex flex-column align-items-center" style={{ minWidth: 40 }}>
-                            <div style={{ width: 22, height: 22, borderRadius: '50%', background: '#fff', border: '4px solid #7F00FF', boxShadow: '0 0 0 4px #7F00FF33', zIndex: 2 }}></div>
+                            <div className="text-primary" style={{ width: 22, height: 22, borderRadius: '50%', background: '#fff', border: '4px solid ', boxShadow: '0 0 0 4px #7F00FF33', zIndex: 2 }}></div>
                             {idx < experiences.length - 1 && (
-                                <div style={{ width: 6, height: 90, background: 'linear-gradient(180deg, #7F00FF55 0%, #fff0 100%)', margin: '0 auto', zIndex: 1 }}></div>
+                                <div style={{ width: 6, height: 90, background: 'linear-gradient(180deg, #ffffff55 0%, #fff0 100%)', margin: '0 auto', zIndex: 1 }}></div>
                             )}
                         </div>
                         {/* Card with image */}
@@ -63,7 +63,7 @@ const WorkExperience = () => {
                                     <Image src={exp.logo} alt={exp.company} width={70} height={70} rounded style={{ background: '#fff', padding: 8, boxShadow: '0 2px 16px #7F00FF33' }} />
                                 </div>
                                 <div className="flex-grow-1">
-                                    <Card.Title style={{ color: '#7F00FF', fontWeight: 'bold', fontSize: '1.25rem' }}>{exp.position}</Card.Title>
+                                    <Card.Title className="text-primary" style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>{exp.position}</Card.Title>
                                     <div className="d-flex flex-wrap align-items-center mb-2">
                                         <span className="fw-bold me-2" style={{ color: '#fff' }}>{exp.company}</span>
                                         <span className="badge bg-secondary bg-opacity-75 text-light fs-6 fw-normal">{exp.period}</span>

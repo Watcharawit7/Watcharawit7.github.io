@@ -23,9 +23,9 @@ const CustomNavbar = () => {
             <Nav.Link as={Link} to="/skills" className="text-light mx-2">
               Skills
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="text-light mx-2">
+            {/* <Nav.Link as={Link} to="/contact" className="text-light mx-2">
               Contact
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,9 +1,8 @@
-import React from "react";
 
 const Footer = () => {
   return (
     <footer
-      className="text-center py-4 mt-5 bg-dark"
+      className="text-center py-3 mt-3 bg-dark"
       style={{ color: "#fff", borderTop: "1px solid #222" }}
     >
       <div className="container">
