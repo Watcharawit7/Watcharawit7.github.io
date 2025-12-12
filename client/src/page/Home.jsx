@@ -57,10 +57,7 @@ const Home = () => {
                       Leadership
                     </li>
                     <li className="list-inline-item badge bg-primary bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">
-                      Problem Solving
-                    </li>
-                    <li className="list-inline-item badge bg-primary bg-opacity-75 text-light fs-6 fw-normal p-2 m-1">
-                      Adaptability
+                      Creativity
                     </li>
                   </ul>
                 </div>
@@ -453,7 +450,7 @@ const Home = () => {
             <span style={{ fontWeight: "bold", color: "#fff" }}>
               Location:
             </span>{" "}
-            Songkla, Thailand
+            Songkhla, Thailand
           </p>
           <div className="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center w-100 mt-2">
             <a
