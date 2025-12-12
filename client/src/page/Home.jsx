@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container, Image, Card, Button } from "react-bootstrap";
 import { BsDownload } from "react-icons/bs";
+import { GrCertificate } from "react-icons/gr";
 const Home = () => {
   return (
     <>
@@ -85,6 +86,14 @@ const Home = () => {
                   >
                     <BsDownload className="me-1" size={18} />
                     Download Resume
+                  </a>
+                      <a
+                    href="/pdf/Watcharawit_Bachelor.pdf"
+                    download
+                    className="btn btn-outline-warning btn-sm rounded-pill ms-1 d-flex align-items-center"
+                  >
+                    <GrCertificate className="me-1" size={18} />
+                    Bachelor's degree certificate
                   </a>
                 </div>
               </div>

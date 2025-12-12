@@ -12,8 +12,8 @@ const projectsData = [
     full: `เว็บไซต์แนะนำผลงานการทำกิจกรรมของนักเรียน เช่น ผลงานวาดภาพ ผลงานระบายสี หรือกิจกรรมอื่น ๆ ซึ่ง Framework ที่ใช้ Angular and PrimeNG`,
     tech: ["Angular", "PrimeNG","PrimeFlex"],
     images: ["/img/Pictures/Intern/Portfolio_5.png","/img/Pictures/Intern/Portfolio_6.png","/img/Pictures/Intern/Portfolio_3.png","/img/Pictures/Intern/Portfolio_4.png","/img/Pictures/Intern/Portfolio_1.png","/img/Pictures/Intern/Portfolio_2.png"],
-    repo: "#",
-    demo: "#",
+    // repo: "#",
+    certificate: "/pdf/certificate_bonmek.pdf",
   },
     {
     id: 2,
@@ -22,8 +22,8 @@ const projectsData = [
     full: `เว็บไซต์เช็คชื่อนักเรียน ที่เป็นรูปเเบบ Mobile ใช้สำหรับเช็คการ มา ขาด ลา สาย ของนักเรียน เเละตรวจสอบข้อมูล ซึ่ง Framework ที่ใช้ Angular ,PrimeNG, PrimeFlex`,
     tech: ["Angular", "PrimeNG","PrimeFlex"],
     images: ["/img/Pictures/Intern/CheckName_1.png","/img/Pictures/Intern/CheckName_2.png","/img/Pictures/Intern/CheckName_3.png","/img/Pictures/Intern/CheckName_4.png","/img/Pictures/Intern/CheckName_5.png","/img/Pictures/Intern/CheckName_6.png","/img/Pictures/Intern/CheckName_7.png","/img/Pictures/Intern/CheckName_8.png"],
-    repo: "#",
-    demo: "#",
+    // repo: "#",
+    certificate: "/pdf/certificate_bonmek.pdf",
   },
   {
     id: 3,
@@ -43,8 +43,7 @@ const projectsData = [
     full: `ระบบจองสนามที่ช่วยให้ผู้ใช้สามารถดูตารางเวลาว่าง จอง และชำระเงินออนไลน์ มีระบบสมาชิกและหน้าจัดการของผู้ดูแล`,
     tech: ["React", "MUI", "Express"],
     images: ["/img/Pictures/courtCraft.png"],
-    repo: "#",
-    demo: "#",
+    repo: "https://github.com/Watcharawit7/courtCraft",
   }
 ];
 
@@ -78,9 +77,6 @@ const Projects = () => {
                       <Button variant="outline-primary" size="sm" onClick={() => setSelected(project)}>
                         ดูรายละเอียด
                       </Button>
-                      {/* <Button variant="primary" size="sm" href={project.demo || project.repo} target="_blank">
-                        เปิดตัวอย่าง
-                      </Button> */}
                     </div>
                   </Card.Body>
                 </Card>
@@ -166,7 +162,7 @@ function ProjectModal({ project, onHide }) {
               </div>
               <div className="d-flex gap-2 mt-3 flex-wrap">
                 {project.certificate && (
-                  <Button variant={showCert ? "outline-secondary" : "secondary"} size="sm" onClick={() => setShowCert(!showCert)}>
+                  <Button variant={showCert ? "outline-dark" : "secondary"} size="sm" onClick={() => setShowCert(!showCert)}>
                     {showCert ? 'Back to images' : 'View Certificate'}
                   </Button>
                 )}
@@ -175,7 +171,6 @@ function ProjectModal({ project, onHide }) {
                     <BsGithub className="me-1" /> Repo 
                   </Button>
                 )}
-                
               </div>
             </Col>
           </Row>
